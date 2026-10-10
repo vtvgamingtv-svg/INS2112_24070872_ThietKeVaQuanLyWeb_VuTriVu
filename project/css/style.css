@@ -1,0 +1,86 @@
+/* ==========================================================
+   style.css — Bài tập 4: Trang trí bằng External CSS
+   Vị trí: project/css/style.css
+   Được link từ about.html, index.html, contact.html bằng:
+   <link rel="stylesheet" href="css/style.css">
+   ========================================================== */
+
+
+/* ---------- 1. BODY: nền tảng, mọi phần tử con kế thừa ---------- */
+body {
+  background-color: #f7f9fc;          /* nền sáng, dịu mắt */
+  color: #222831;                     /* chữ gần đen -> tương phản tốt với nền */
+  font-family: Arial, Verdana, sans-serif; /* thử Arial, không có thì Verdana, cuối cùng sans-serif */
+  font-size: 16px;                    /* cỡ chữ mặc định cho cả trang */
+  line-height: 1.6;                   /* giãn dòng chung */
+  max-width: 800px;                   /* giới hạn độ rộng dòng chữ cho dễ đọc */
+  margin: 0 auto;                     /* căn giữa nội dung trên màn hình rộng */
+  padding: 24px;                      /* khoảng trống quanh nội dung */
+}
+
+
+/* ---------- 2. ĐỀ MỤC: ba cấp khác nhau rõ về cỡ và màu ---------- */
+h1 {
+  color: #1f4e79;                     /* xanh đậm */
+  font-size: 2.5em;                   /* lớn nhất: 2.5 lần cỡ chữ gốc */
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #1f4e79;   /* gạch chân bằng CSS, không dùng thẻ <u> */
+}
+
+h2 {
+  color: #2e8b57;                     /* xanh lá - khác màu h1 */
+  font-size: 1.8em;
+  margin-top: 32px;                   /* tách các phần nội dung với nhau */
+}
+
+h3 {
+  color: #c0392b;                     /* đỏ gạch - khác cả h1 và h2 */
+  font-size: 1.3em;
+  font-style: italic;                 /* thêm một kiểu khác: chữ nghiêng */
+}
+
+
+/* ---------- 3. ĐOẠN VĂN ---------- */
+p {
+  line-height: 1.8;                   /* giãn dòng thoải mái hơn */
+  margin: 0 0 16px 0;                 /* trên 0, phải 0, dưới 16px, trái 0 */
+}
+
+
+/* ---------- 4. HÌNH ẢNH ---------- */
+img {
+  max-width: 100%;                    /* ảnh không bao giờ rộng hơn khung chứa */
+  height: auto;                       /* giữ đúng tỉ lệ ảnh khi bị thu nhỏ */
+  border: 2px solid #d0d7e2;          /* viền mảnh màu xám xanh */
+  border-radius: 12px;                /* bo góc */
+  padding: 4px;                       /* khoảng giữa ảnh và viền */
+  margin: 16px 0;                     /* cách nội dung trên/dưới */
+  background-color: #ffffff;
+}
+
+
+/* ---------- 5. DANH SÁCH ---------- */
+ul {
+  list-style-type: square;            /* đổi chấm tròn thành ô vuông */
+  padding-left: 32px;
+}
+
+ol {
+  list-style-type: decimal;           /* đánh số 1, 2, 3 */
+  padding-left: 32px;
+}
+
+li {
+  margin-bottom: 8px;                 /* giãn các mục trong danh sách */
+}
+
+
+/* ---------- (Thêm) LIÊN KẾT ---------- */
+a {
+  color: #1f4e79;
+}
+
+a:hover {
+  color: #c0392b;                     /* đổi màu khi rê chuột qua */
+}
