@@ -1,86 +1,188 @@
 /* ==========================================================
-   style.css — Bài tập 4: Trang trí bằng External CSS
-   Vị trí: project/css/style.css
-   Được link từ about.html, index.html, contact.html bằng:
-   <link rel="stylesheet" href="css/style.css">
+   style.css — dùng chung cho index.html, about.html, contact.html
+   Buổi 4: màu sắc, font chữ, khoảng cách
+   Buổi 5: bố cục header / nav / main / aside / footer
    ========================================================== */
 
 
-/* ---------- 1. BODY: nền tảng, mọi phần tử con kế thừa ---------- */
-body {
-  background-color: #f7f9fc;          /* nền sáng, dịu mắt */
-  color: #222831;                     /* chữ gần đen -> tương phản tốt với nền */
-  font-family: Arial, Verdana, sans-serif; /* thử Arial, không có thì Verdana, cuối cùng sans-serif */
-  font-size: 16px;                    /* cỡ chữ mặc định cho cả trang */
-  line-height: 1.6;                   /* giãn dòng chung */
-  max-width: 800px;                   /* giới hạn độ rộng dòng chữ cho dễ đọc */
-  margin: 0 auto;                     /* căn giữa nội dung trên màn hình rộng */
-  padding: 24px;                      /* khoảng trống quanh nội dung */
+/* ---------- 0. DỌN DẸP CHUNG (Buổi 5) ---------- */
+* {
+    margin: 0;                      /* bỏ khoảng cách mặc định của trình duyệt */
+    padding: 0;
+    box-sizing: border-box;         /* width tính luôn cả padding -> chia cột không bị tràn */
 }
 
 
-/* ---------- 2. ĐỀ MỤC: ba cấp khác nhau rõ về cỡ và màu ---------- */
+/* ---------- 1. BODY ---------- */
+body {
+    margin: 0;                      /* bỏ margin mặc định -> header, footer sát mép */
+    width: 100%;                    /* bố cục chiếm full chiều rộng */
+    background-color: #f7f9fc;      /* nền sáng, dịu mắt */
+    color: #222831;                 /* chữ gần đen, tương phản tốt */
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ---------- 2. ĐỀ MỤC, ĐOẠN VĂN, ẢNH, DANH SÁCH (Buổi 4) ---------- */
 h1 {
-  color: #1f4e79;                     /* xanh đậm */
-  font-size: 2.5em;                   /* lớn nhất: 2.5 lần cỡ chữ gốc */
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 3px solid #1f4e79;   /* gạch chân bằng CSS, không dùng thẻ <u> */
+    color: #1f4e79;
+    font-size: 2.5em;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #1f4e79;
 }
 
 h2 {
-  color: #2e8b57;                     /* xanh lá - khác màu h1 */
-  font-size: 1.8em;
-  margin-top: 32px;                   /* tách các phần nội dung với nhau */
+    color: #2e8b57;
+    font-size: 1.8em;
+    margin: 8px 0 16px 0;
 }
 
 h3 {
-  color: #c0392b;                     /* đỏ gạch - khác cả h1 và h2 */
-  font-size: 1.3em;
-  font-style: italic;                 /* thêm một kiểu khác: chữ nghiêng */
+    color: #c0392b;
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 16px 0 8px 0;
 }
 
-
-/* ---------- 3. ĐOẠN VĂN ---------- */
 p {
-  line-height: 1.8;                   /* giãn dòng thoải mái hơn */
-  margin: 0 0 16px 0;                 /* trên 0, phải 0, dưới 16px, trái 0 */
+    line-height: 1.8;
+    margin: 0 0 16px 0;
 }
 
-
-/* ---------- 4. HÌNH ẢNH ---------- */
 img {
-  max-width: 100%;                    /* ảnh không bao giờ rộng hơn khung chứa */
-  height: auto;                       /* giữ đúng tỉ lệ ảnh khi bị thu nhỏ */
-  border: 2px solid #d0d7e2;          /* viền mảnh màu xám xanh */
-  border-radius: 12px;                /* bo góc */
-  padding: 4px;                       /* khoảng giữa ảnh và viền */
-  margin: 16px 0;                     /* cách nội dung trên/dưới */
-  background-color: #ffffff;
+    max-width: 100%;                /* ảnh không tràn khung */
+    height: auto;
+    border: 2px solid #d0d7e2;
+    border-radius: 12px;
+    padding: 4px;
+    margin: 16px 0;
+    background-color: #ffffff;
 }
 
-
-/* ---------- 5. DANH SÁCH ---------- */
 ul {
-  list-style-type: square;            /* đổi chấm tròn thành ô vuông */
-  padding-left: 32px;
+    list-style-type: square;
+    padding-left: 32px;
+    margin-bottom: 16px;
 }
 
 ol {
-  list-style-type: decimal;           /* đánh số 1, 2, 3 */
-  padding-left: 32px;
+    list-style-type: decimal;
+    padding-left: 32px;
+    margin-bottom: 16px;
 }
 
 li {
-  margin-bottom: 8px;                 /* giãn các mục trong danh sách */
+    margin-bottom: 8px;
 }
 
-
-/* ---------- (Thêm) LIÊN KẾT ---------- */
 a {
-  color: #1f4e79;
+    color: #1f4e79;
 }
 
 a:hover {
-  color: #c0392b;                     /* đổi màu khi rê chuột qua */
+    color: #c0392b;
+}
+
+
+/* ---------- 3. HEADER (Buổi 5) ---------- */
+header {
+    background-color: #1f4e79;      /* nền xanh đậm */
+    color: #ffffff;                 /* chữ trắng */
+    padding: 24px 16px;             /* trên-dưới 24px, trái-phải 16px */
+    text-align: center;             /* căn giữa */
+}
+
+header h1 {
+    color: #ffffff;                 /* ghi đè màu xanh của h1 thường */
+    font-size: 2em;
+    border-bottom: none;            /* bỏ gạch chân của h1 thường */
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    margin: 4px 0 0 0;
+    font-style: italic;
+}
+
+
+/* ---------- 4. NAV - THANH ĐIỀU HƯỚNG (Buổi 5) ---------- */
+nav {
+    background-color: #163a5c;      /* xanh tối hơn header */
+}
+
+nav ul {
+    list-style: none;               /* bỏ dấu chấm đầu dòng */
+    display: flex;                  /* xếp các mục theo hàng ngang */
+    justify-content: center;        /* căn giữa hàng menu */
+    gap: 32px;                      /* khoảng cách giữa các liên kết */
+    padding: 12px 16px;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;                      /* bỏ margin-bottom của li thường */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;          /* bỏ gạch chân link */
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffd166;                 /* vàng: đang rê chuột hoặc đang ở trang này */
+}
+
+
+/* ---------- 5. MAIN - VÙNG NỘI DUNG CHÍNH (Buổi 5) ---------- */
+main {
+    max-width: 900px;               /* không căng quá rộng trên màn hình lớn */
+    margin: 0 auto;                 /* căn giữa */
+    padding: 24px 16px;             /* khoảng cách hai bên */
+}
+
+/* Trang chủ: main chia thành 2 cột */
+main.two-columns {
+    display: flex;                  /* các con của main xếp cạnh nhau */
+    justify-content: space-between; /* đẩy 2 cột ra 2 bên, khoảng trống ở giữa */
+    align-items: flex-start;        /* 2 cột cao theo nội dung của mình */
+}
+
+main.two-columns article {
+    width: 70%;                     /* cột chính bên trái */
+}
+
+main.two-columns aside {
+    width: 25%;                     /* cột phụ bên phải, 5% còn lại là khe hở */
+}
+
+
+/* ---------- 6. ASIDE - CỘT PHỤ (Buổi 5) ---------- */
+aside {
+    background-color: #e8eef6;      /* nền xanh nhạt để tách khỏi cột chính */
+    padding: 16px;
+    border-radius: 8px;
+}
+
+
+/* ---------- 7. FOOTER (Buổi 5) ---------- */
+footer {
+    background-color: #111827;      /* gần đen - khác màu header */
+    color: #e5e7eb;
+    text-align: center;
+    padding: 24px 16px;
+    clear: both;                    /* nếu chia cột bằng float, footer không bị trèo lên */
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+footer a {
+    color: #93c5fd;
 }
