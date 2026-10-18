@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ - BookTalk Club</title>
+    <title>BookTalk Club - Trang chủ</title>
     <!-- Liên kết tới file CSS dùng chung cho cả 3 trang -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,33 +19,57 @@
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <!-- MAIN: nội dung chính, CSS chia thành 2 cột (article bên trái, aside bên phải) -->
     <main class="two-columns">
-        <!-- Cột chính: giới thiệu câu lạc bộ -->
+        <!-- Cột chính: các phần giới thiệu, mỗi phần mở đầu bằng một h2 -->
         <article>
-            <h2>Chào mừng đến với BookTalk Club!</h2>
-            <p>BookTalk Club là nơi những bạn sinh viên yêu sách gặp nhau. Mỗi tuần, chúng mình cùng đọc một cuốn sách, rồi ngồi lại trò chuyện về những điều đã đọc được.</p>
-            <p>Không cần đọc nhiều hay đọc nhanh, chỉ cần bạn thích đọc và thích chia sẻ. Ai cũng có thể tham gia.</p>
+            <!-- Phần 1: Chào mừng -->
+            <section>
+                <h2>Welcome to BookTalk Club!</h2>
+                <p>BookTalk Club là nơi những bạn sinh viên yêu sách gặp nhau. Mỗi tuần, chúng mình cùng đọc một cuốn sách, rồi ngồi lại trò chuyện về những điều đã đọc được.</p>
+                <p>Không cần đọc nhiều hay đọc nhanh, chỉ cần bạn thích đọc và thích chia sẻ. Ai cũng có thể tham gia.</p>
+                <img src="images/gallery-1.svg" alt="Buổi đọc sách buổi tối của BookTalk Club">
+            </section>
 
-            <h3>Hoạt động của CLB</h3>
-            <ul>
-                <li>Buổi đọc sách chung vào tối thứ Sáu hằng tuần</li>
-                <li>Thảo luận, chia sẻ cảm nhận sau mỗi cuốn sách</li>
-                <li>Trao đổi và cho mượn sách giữa các thành viên</li>
-            </ul>
+            <!-- Phần 2: CLB làm gì -->
+            <section>
+                <h2>What We Do</h2>
+                <ul>
+                    <li>Buổi đọc sách chung vào tối thứ Sáu hằng tuần</li>
+                    <li>Thảo luận, chia sẻ cảm nhận sau mỗi cuốn sách</li>
+                    <li>Trao đổi và cho mượn sách giữa các thành viên</li>
+                    <li>Giao lưu với tác giả và diễn giả khách mời</li>
+                </ul>
+            </section>
+
+            <!-- Phần 3: Ba lợi ích khi tham gia -->
+            <section>
+                <h2>Why Join Us?</h2>
+                <ol>
+                    <li><strong>Đọc đều đặn hơn:</strong> có bạn đồng hành nên dễ giữ thói quen đọc mỗi tuần.</li>
+                    <li><strong>Nói tự tin hơn:</strong> luyện kỹ năng trình bày qua mỗi buổi thảo luận.</li>
+                    <li><strong>Thêm bạn mới:</strong> gặp gỡ những người có cùng sở thích ở nhiều ngành khác nhau.</li>
+                </ol>
+                <img src="images/gallery-3.svg" alt="Các thành viên thảo luận nhóm">
+            </section>
         </article>
 
-        <!-- ASIDE: cột phụ bên phải, thông tin bổ sung -->
+        <!-- ASIDE: cột phụ bên phải, các sự kiện sắp tới -->
         <aside>
-            <h3>Sách của tháng</h3>
-            <p>Tháng này CLB cùng đọc "Đắc nhân tâm" của Dale Carnegie, cuốn sách về nghệ thuật giao tiếp.</p>
+            <h2>Upcoming Events</h2>
+            <h3>Đêm đọc sách</h3>
+            <p>17/10/2026 - 19:00<br>Phòng sinh hoạt sinh viên</p>
 
-            <h3>Lịch sinh hoạt</h3>
-            <p>19:00 tối thứ Sáu<br>Phòng sinh hoạt sinh viên</p>
+            <h3>Hội chợ sách cũ</h3>
+            <p>25/10/2026 - 8:00<br>Sảnh chính, Trường Quốc tế</p>
+
+            <p><a href="events.html">Xem tất cả sự kiện</a></p>
         </aside>
     </main>
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookTalk Club - Sự kiện</title>
+    <!-- Liên kết tới file CSS dùng chung cho cả 3 trang -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER: dải trên cùng, chứa tên câu lạc bộ -->
+    <header>
+        <h1>BookTalk Club</h1>
+        <p>Câu lạc bộ Đọc sách &amp; Trò chuyện</p>
+    </header>
+
+    <!-- NAV: thanh điều hướng, giống nhau ở cả 3 trang; class="active" đánh dấu trang hiện tại -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN: danh sách sự kiện, mỗi sự kiện là một event-card -->
+    <main>
+        <h2>Sự kiện &amp; Hoạt động</h2>
+        <p>Các buổi sinh hoạt sắp tới của BookTalk Club. Bấm nút để đăng ký tham gia.</p>
+
+        <!-- EVENT CARD 1: khối có viền trái làm điểm nhấn -->
+        <div class="event-card">
+            <h3>Đêm đọc sách "Đắc nhân tâm"</h3>
+            <p class="event-date">17/10/2026 | 19:00 - 21:00</p>
+            <p class="event-location">Phòng sinh hoạt sinh viên</p>
+            <p>Cùng đọc và thảo luận các chương đầu của cuốn sách về nghệ thuật giao tiếp.</p>
+            <a href="contact.html" class="btn">Đăng ký ngay</a>
+        </div>
+
+        <!-- EVENT CARD 2 -->
+        <div class="event-card">
+            <h3>Hội chợ trao đổi sách cũ</h3>
+            <p class="event-date">25/10/2026 | 8:00 - 11:00</p>
+            <p class="event-location">Sảnh chính, Trường Quốc tế</p>
+            <p>Mang một cuốn sách cũ, đổi về một cuốn sách mới mà bạn chưa đọc.</p>
+            <a href="contact.html" class="btn">Đăng ký ngay</a>
+        </div>
+
+        <!-- EVENT CARD 3 -->
+        <div class="event-card">
+            <h3>Trò chuyện cùng tác giả trẻ</h3>
+            <p class="event-date">08/11/2026 | 14:00</p>
+            <p class="event-location">Hội trường tầng 3</p>
+            <p>Giao lưu với một tác giả trẻ về hành trình viết cuốn sách đầu tay.</p>
+            <a href="contact.html" class="btn">Nhận vé</a>
+        </div>
+
+        <h2>Lịch sinh hoạt hằng tuần</h2>
+        <!-- TABLE: hàng chẵn được tô nền nhạt bằng tr:nth-child(even) -->
+        <table>
+            <tr>
+                <th>Thứ</th>
+                <th>Giờ</th>
+                <th>Hoạt động</th>
+            </tr>
+            <tr>
+                <td>Thứ Hai</td>
+                <td>18:00</td>
+                <td>Đọc sách tự do</td>
+            </tr>
+            <tr>
+                <td>Thứ Tư</td>
+                <td>18:30</td>
+                <td>Chia sẻ một cuốn sách hay</td>
+            </tr>
+            <tr>
+                <td>Thứ Sáu</td>
+                <td>19:00</td>
+                <td>Đọc chung và thảo luận</td>
+            </tr>
+            <tr>
+                <td>Chủ Nhật</td>
+                <td>9:00</td>
+                <td>Cà phê sách</td>
+            </tr>
+        </table>
+    </main>
+
+    <!-- FOOTER: bản quyền và liên kết mạng xã hội -->
+    <footer>
+        <p>&copy; 2026 BookTalk Club - Thực hiện: Vũ Trí Vũ</p>
+        <p>
+            <a href="https://github.com/vtvgamingtv-svg">GitHub</a> |
+            <a href="mailto:vtvgamingtv@gmail.com">Email</a>
+        </p>
+    </footer>
+</body>
+</html>

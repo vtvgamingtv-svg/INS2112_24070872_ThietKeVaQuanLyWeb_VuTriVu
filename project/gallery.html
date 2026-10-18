@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookTalk Club - Thư viện ảnh</title>
+    <!-- Liên kết tới file CSS dùng chung cho cả 3 trang -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER: dải trên cùng, chứa tên câu lạc bộ -->
+    <header>
+        <h1>BookTalk Club</h1>
+        <p>Câu lạc bộ Đọc sách &amp; Trò chuyện</p>
+    </header>
+
+    <!-- NAV: thanh điều hướng, giống nhau ở cả 3 trang; class="active" đánh dấu trang hiện tại -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN: thư viện ảnh -->
+    <main>
+        <h2>Thư viện ảnh</h2>
+        <p>Những khoảnh khắc trong các buổi sinh hoạt của BookTalk Club. Thử kéo hẹp cửa sổ để thấy lưới ảnh tự đổi số cột.</p>
+
+        <!-- GALLERY: display flex + flex-wrap, ảnh tự xuống hàng khi hết chỗ -->
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/gallery-1.svg" alt="Đêm đọc sách tháng 9">
+                <p>Đêm đọc sách tháng 9</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery-2.svg" alt="Góc sách của CLB">
+                <p>Góc sách của CLB</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery-3.svg" alt="Buổi thảo luận nhóm">
+                <p>Buổi thảo luận nhóm</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery-4.svg" alt="Hội chợ sách cũ">
+                <p>Hội chợ sách cũ</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery-5.svg" alt="Cà phê sách Chủ Nhật">
+                <p>Cà phê sách Chủ Nhật</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/gallery-6.svg" alt="Giao lưu tác giả">
+                <p>Giao lưu tác giả</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER: bản quyền và liên kết mạng xã hội -->
+    <footer>
+        <p>&copy; 2026 BookTalk Club - Thực hiện: Vũ Trí Vũ</p>
+        <p>
+            <a href="https://github.com/vtvgamingtv-svg">GitHub</a> |
+            <a href="mailto:vtvgamingtv@gmail.com">Email</a>
+        </p>
+    </footer>
+</body>
+</html>

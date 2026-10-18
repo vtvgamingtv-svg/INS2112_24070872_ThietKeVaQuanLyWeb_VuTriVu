@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ - BookTalk Club</title>
+    <title>BookTalk Club - Liên hệ</title>
     <!-- Liên kết tới file CSS dùng chung cho cả 3 trang -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,18 +19,46 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
 
     <!-- MAIN: nội dung chính của trang Liên hệ -->
     <main>
-        <h2>Liên hệ</h2>
-        <p>Nếu bạn muốn tham gia BookTalk Club hoặc có câu hỏi, hãy liên hệ với mình qua:</p>
+        <h2>Contact Us</h2>
+        <p>Bạn muốn tham gia BookTalk Club, giới thiệu một cuốn sách hay hay chỉ đơn giản là muốn trò chuyện? Hãy liên hệ với chúng mình qua một trong các kênh dưới đây, CLB sẽ trả lời trong vòng 24 giờ.</p>
+
+        <!-- Danh sách kênh liên hệ (thông tin giả, dùng cho bài tập) -->
+        <h3>Kênh liên hệ</h3>
         <ul>
-            <li>Email: <a href="mailto:vtvgamingtv@gmail.com">vtvgamingtv@gmail.com</a></li>
-            <li>GitHub: <a href="https://github.com/vtvgamingtv-svg">vtvgamingtv-svg</a></li>
+            <li>Email: booktalk.club@example.com</li>
+            <li>Điện thoại: 0123 456 789</li>
+            <li>Facebook: facebook.com/booktalkclub</li>
+            <li>Instagram: @booktalk.club</li>
         </ul>
+
+        <!-- Địa điểm sinh hoạt của CLB -->
+        <h3>Địa điểm sinh hoạt</h3>
+        <p>BookTalk Club họp vào 19:00 tối thứ Sáu hằng tuần tại Phòng sinh hoạt sinh viên, Trường Quốc tế - Đại học Quốc gia Hà Nội, 144 Xuân Thủy, Cầu Giấy, Hà Nội.</p>
+
+        <img src="images/gallery-2.svg" alt="Góc sách tại phòng sinh hoạt của CLB">
+
+        <h3>Gửi tin nhắn cho CLB</h3>
+        <!-- FORM: label nằm phía trên ô nhập, ô đang gõ có viền xanh (:focus) -->
+        <form action="#" method="post">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" placeholder="Nguyễn Văn A">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ban@example.com">
+
+            <label for="message">Lời nhắn</label>
+            <textarea id="message" name="message" rows="5" placeholder="Bạn muốn tham gia sự kiện nào?"></textarea>
+
+            <button type="submit">Gửi tin nhắn</button>
+        </form>
     </main>
 
     <!-- FOOTER: bản quyền và liên kết mạng xã hội -->

@@ -186,3 +186,175 @@ footer p {
 footer a {
     color: #93c5fd;
 }
+
+/* ==========================================================
+   BUỔI 6: WEBSITE NHIỀU TRANG
+   Event card, nút bấm, bảng kẻ sọc, gallery, form
+   ========================================================== */
+
+
+/* ---------- 8. EVENT CARD - THẺ SỰ KIỆN ---------- */
+.event-card {
+    background-color: #ffffff;
+    border-left: 5px solid #1f4e79;     /* viền trái làm điểm nhấn */
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 20px;                /* các thẻ xếp dọc, cách nhau 20px */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.event-card h3 {
+    margin-top: 0;
+}
+
+.event-date {
+    color: #1f4e79;                     /* chữ xanh */
+    font-weight: bold;                  /* in đậm */
+    margin-bottom: 4px;
+}
+
+.event-location {
+    color: #6b7280;                     /* chữ xám */
+    font-style: italic;                 /* in nghiêng */
+    margin-bottom: 8px;
+}
+
+
+/* ---------- 9. NÚT BẤM (.btn) ---------- */
+.btn {
+    display: inline-block;              /* link nhưng có padding như một cái nút */
+    background-color: #1f4e79;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;              /* bỏ gạch chân link */
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #c0392b;          /* đổi màu khi rê chuột */
+    color: #ffffff;
+}
+
+
+/* ---------- 10. BẢNG KẺ SỌC (ZEBRA STRIPING) ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;          /* gộp viền 2 ô cạnh nhau thành 1 */
+    margin: 16px 0 24px 0;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    border: 1px solid #d0d7e2;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1f4e79;          /* hàng tiêu đề nền xanh đậm */
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #eef3f9;          /* hàng chẵn tô nền nhạt -> sọc ngựa vằn */
+}
+
+
+/* ---------- 11. GALLERY - LƯỚI ẢNH BẰNG FLEXBOX ---------- */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;                    /* hết chỗ thì ảnh tự xuống hàng */
+    gap: 15px;                          /* khoảng cách giữa các ảnh */
+}
+
+.gallery-item {
+    flex: 1 1 250px;                    /* bắt đầu 250px, được giãn ra hoặc co lại -> 3 ảnh mỗi hàng */
+    border-radius: 8px;
+    overflow: hidden;                   /* cắt phần ảnh tràn ra ngoài góc bo */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;                     /* bỏ khoảng hở 4px dưới ảnh inline */
+    margin: 0;                          /* ghi đè style img chung của buổi 4 */
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.gallery-item p {
+    padding: 8px 12px;
+    margin: 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+/* ---------- 12. FORM LIÊN HỆ ---------- */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin-top: 16px;
+}
+
+label {
+    display: block;                     /* label nằm riêng một dòng, phía trên ô nhập */
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d7e2;
+    border-radius: 6px;
+    font-family: inherit;               /* dùng cùng font với cả trang */
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1f4e79;              /* ô đang gõ có viền xanh */
+    box-shadow: 0 0 0 3px rgba(31, 78, 121, 0.2);
+}
+
+button {
+    background-color: #1f4e79;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;                    /* con trỏ hình bàn tay */
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+
+/* ==========================================================
+   BUỔI 6: TRANG CHỦ NHIỀU PHẦN
+   ========================================================== */
+
+/* Mỗi section là một phần riêng của trang chủ, có khoảng cách phía dưới */
+section {
+    margin-bottom: 32px;
+}
+
+/* Tiêu đề h2 trong aside nhỏ hơn h2 thường cho vừa cột hẹp */
+aside h2 {
+    font-size: 1.4em;
+    margin-top: 0;
+}
